@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="common.css" />
+    <link rel="stylesheet" href="main.css" />
+
+    <link rel="stylesheet" href="header_footer.css" />
+
+    <title>Fluent Hub</title>
+  </head>
+  <body>
+    <header>
+      <aside>
+        <button id="main-button" onclick="openLink('main')"></button>
+      </aside>
+      <button id="menuBurger"></button>
+      <nav id="header-nav">
+        <a href="schedule.html" class="menu-header-btn"> Расписание </a>
+        <a href="contacts.html" class="menu-header-btn"> Контакты </a>
+        <button
+          id="theme-button"
+          class="menu-header-btn"
+          onclick="changeTheme()"
+        >
+          <svg
+            width="30.000000"
+            height="30.000000"
+            viewBox="0 0 30 30"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+          >
+            <desc>Created with Pixso.</desc>
+            <defs>
+              <pattern
+                id="pattern_2_18890"
+                patternContentUnits="objectBoundingBox"
+                width="1.000000"
+                height="1.000000"
+              >
+                <use
+                  xlink:href="#image2_1889_0"
+                  transform="matrix(0.013889,0,0,0.013889,0,0)"
+                />
+              </pattern>
+              <image
+                id="image2_1889_0"
+                width="72.000000"
+                height="72.000000"
+                xlink:href="data:image/png;base64,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"
+              />
+            </defs>
+            <rect
+              id="Sun"
+              width="22.000000"
+              height="22.000000"
+              fill="url(#pattern_2_18890)"
+              fill-opacity="1.000000"
+            />
+          </svg>
+          Тема
+        </button>
+        <button id="closeBtn">Закрыть меню</button>
+      </nav>
+    </header>
+    <main>
+      <section id="section-one">
+        <article>
+          <h2><em>СВОБОДА</em> ВЫРАЖЕНИЯ ЧЕРЕЗ ЯЗЫКИ</h2>
+          <p>
+            Мы предлагаем широкий спектр языковых программ, проводимых опытными
+            преподавателями в удобных для вас локациях. Наша миссия - помочь
+            студентам достичь языковой свободы и уверенности в общении.
+          </p>
+          <button class="white-button" id="scrollBottom">Записаться</button>
+        </article>
+        <div id="carousel">
+          <img src="i1.png" class="img" alt="" />
+          <img src="i2.png" class="img" alt="" />
+          <img src="i3.png" class="img" alt="" />
+          <img src="i4.png" class="img" alt="" />
+
+          <img src="i6.png" class="img" alt="" />
+        </div>
+      </section>
+      <section id="section-two">
+        <div id="section-two-cont">
+          <article class="langCard">
+            <div class="headingLang">
+              <h3>АНГЛИЙСКИЙ ОФЛАЙН</h3>
+
+              <div id="brFlag"></div>
+            </div>
+            <div class="langCard-p">
+              <p>🕗<em>Расписание: </em>офлайн 2 раза в неделю по 80 минут;</p>
+              <p>🧑‍🏫<em>Набор: </em>в новые и текущие группы;</p>
+              <p>💸<em>Стоимость: </em>от 15 BYN за занятие;</p>
+              <p>📚<em>Программа: </em>составляется после тестировния.</p>
+            </div>
+          </article>
+          <article class="langCard">
+            <div class="headingLang">
+              <h3>НЕМЕЦКИЙ ОФЛАЙН</h3>
+
+              <div id="geFlag"></div>
+            </div>
+            <div class="langCard-p">
+              <p>🕗<em>Расписание: </em>офлайн 2 раза в неделю по 60 минут;</p>
+              <p>🧑‍🏫<em>Набор: </em>в новые и текущие группы;</p>
+              <p>💸<em>Стоимость: </em>от 18 BYN за занятие;</p>
+              <p>📚<em>Программа: </em>составляется после тестировния.</p>
+            </div>
+          </article>
+          <article class="langCard">
+            <div class="headingLang">
+              <h3>ИСПАНСКИЙ ОФЛАЙН</h3>
+
+              <div id="spFlag"></div>
+            </div>
+            <div class="langCard-p">
+              <p>🕗<em>Расписание: </em>офлайн 2 раза в неделю по 60 минут;</p>
+              <p>🧑‍🏫<em>Набор: </em>в новые группы;</p>
+              <p>💸<em>Стоимость: </em>от 20 BYN за занятие;</p>
+              <p>📚<em>Программа: </em>составляется после тестировния.</p>
+            </div>
+          </article>
+        </div>
+      </section>
+      <section id="section-three">
+        <h2 id="friendAdd">ПРИВЕДИ ДРУГА<br />И ПОЛУЧИ</h2>
+        <div id="dance"></div>
+        <h2 id="weekFree">НЕДЕЛЮ ЗАНЯТИЙ <br /><em>БЕСПЛАТНО</em></h2>
+      </section>
+      <section id="section-four">
+        <form>
+          <article>
+            <h2>ОСТАЛИСЬ ВОПРОСЫ? <br /><em>МЫ ПОЗВОНИМ</em></h2>
+            <p>
+              Оставляете свои контакты, мы Вам наберем и ответим на все
+              оставшиеся вопросы!
+            </p>
+          </article>
+          <aside>
+            <input
+              type="text"
+              name="userName"
+              id="nameInput"
+              placeholder="Ваше имя"
+            />
+            <input
+              maxlength="17"
+              type="tel"
+              name="phone"
+              pattern="[789][0-9]{9}"
+              id="phone"
+              placeholder="+375 (00) 000-00-00"
+            />
+            <button class="white-button" id="section-four-button">
+              Записаться
+            </button>
+          </aside>
+        </form>
+      </section>
+    </main>
+    <footer>
+      <h4 class="white-button-footer" id="scrollTop">FluentHub</h4>
+      <div>
+        <svg
+          width="40.000000"
+          height="40.000000"
+          viewBox="0 0 40 40"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+        >
+          <desc>Created with Pixso.</desc>
+          <defs />
+          <path
+            id="Vk"
+            d="M20 0C8.95 0 0 8.95 0 20C0 31.04 8.95 40 20 40C31.04 40 40 31.04 40 20C40 8.95 31.04 0 20 0ZM27.69 22.56C27.69 22.56 29.46 24.31 29.89 25.12C29.9 25.13 29.91 25.15 29.91 25.16C30.09 25.46 30.13 25.69 30.05 25.86C29.9 26.15 29.4 26.29 29.23 26.3L26.1 26.3C25.89 26.3 25.43 26.25 24.88 25.87C24.46 25.57 24.04 25.08 23.64 24.61C23.03 23.91 22.51 23.3 21.98 23.3C21.91 23.3 21.84 23.31 21.78 23.33C21.38 23.46 20.87 24.03 20.87 25.55C20.87 26.03 20.49 26.3 20.23 26.3L18.79 26.3C18.31 26.3 15.77 26.13 13.52 23.76C10.76 20.85 8.28 15.02 8.26 14.97C8.11 14.59 8.43 14.39 8.78 14.39L11.94 14.39C12.36 14.39 12.5 14.64 12.59 14.87C12.71 15.13 13.12 16.19 13.8 17.37C14.89 19.3 15.57 20.08 16.11 20.08C16.21 20.08 16.31 20.06 16.4 20.01C17.1 19.62 16.97 17.11 16.94 16.58C16.94 16.49 16.93 15.46 16.57 14.97C16.32 14.61 15.88 14.48 15.61 14.43C15.72 14.28 15.86 14.16 16.02 14.08C16.51 13.83 17.38 13.8 18.24 13.8L18.72 13.8C19.66 13.81 19.9 13.87 20.24 13.96C20.93 14.12 20.95 14.57 20.88 16.08C20.87 16.52 20.85 17 20.85 17.58C20.85 17.7 20.84 17.84 20.84 17.98C20.82 18.75 20.8 19.63 21.34 19.99C21.41 20.03 21.49 20.06 21.58 20.06C21.77 20.06 22.34 20.06 23.88 17.41C24.36 16.55 24.78 15.66 25.12 14.75C25.16 14.7 25.25 14.53 25.36 14.47C25.44 14.43 25.52 14.4 25.61 14.41L29.32 14.41C29.73 14.41 30.01 14.47 30.06 14.62C30.15 14.87 30.04 15.63 28.35 17.92L27.59 18.92C26.06 20.93 26.06 21.03 27.69 22.56Z"
+            fill="#B2C1E2"
+            fill-opacity="1.000000"
+            fill-rule="nonzero"
+          />
+        </svg>
+        <svg
+          width="40.000000"
+          height="40.000000"
+          viewBox="0 0 40 40"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+        >
+          <desc>Created with Pixso.</desc>
+          <defs />
+          <path
+            id="Innst"
+            d="M38.94 6.89C39.53 8.46 39.84 10.12 39.87 11.8C39.99 13.92 39.99 14.61 40 20.03C40 25.44 39.97 26.12 39.87 28.25C39.84 29.91 39.52 31.55 38.94 33.1C38.42 34.43 37.64 35.63 36.63 36.64C35.62 37.64 34.42 38.43 33.09 38.94C31.54 39.52 29.9 39.84 28.24 39.87C26.11 40 25.42 40 20 40C14.57 40 13.89 39.97 11.75 39.87C10.09 39.82 8.45 39.48 6.9 38.87C5.57 38.36 4.37 37.58 3.36 36.57C2.35 35.57 1.57 34.36 1.05 33.04C0.47 31.48 0.15 29.85 0.12 28.19C0 26.07 0 25.37 0 19.96C0 14.54 0.02 13.87 0.12 11.73C0.15 10.08 0.47 8.44 1.05 6.89C1.56 5.56 2.35 4.36 3.36 3.35C4.36 2.35 5.57 1.56 6.9 1.05C8.45 0.47 10.09 0.15 11.75 0.12C13.87 0 14.57 0 19.99 0C25.42 0 26.09 0.02 28.23 0.12C29.89 0.15 31.53 0.47 33.09 1.05C34.41 1.56 35.62 2.35 36.63 3.35C37.64 4.36 38.42 5.56 38.94 6.89ZM29.74 11.53C30.03 11.65 30.34 11.71 30.66 11.71C31.98 11.71 33.05 10.64 33.05 9.32C33.05 9 32.99 8.69 32.87 8.4C32.75 8.11 32.57 7.85 32.35 7.63C32.13 7.41 31.86 7.23 31.57 7.11C31.28 6.99 30.97 6.93 30.66 6.93C30.34 6.93 30.03 6.99 29.74 7.11C29.45 7.23 29.19 7.41 28.96 7.63C28.74 7.85 28.56 8.11 28.44 8.4C28.32 8.69 28.26 9 28.26 9.32C28.26 9.63 28.32 9.94 28.44 10.23C28.56 10.52 28.74 10.79 28.96 11.01C29.19 11.23 29.45 11.41 29.74 11.53ZM9.71 19.95C9.71 25.61 14.31 30.2 19.98 30.2C22.7 30.2 25.31 29.12 27.24 27.2C29.17 25.27 30.25 22.67 30.25 19.95C30.25 17.23 29.17 14.62 27.24 12.7C25.31 10.78 22.7 9.7 19.98 9.7C14.31 9.7 9.71 14.28 9.71 19.95ZM26.65 19.95C26.65 23.63 23.66 26.61 19.98 26.61C16.3 26.61 13.31 23.63 13.31 19.95C13.31 16.27 16.3 13.29 19.98 13.29C23.66 13.29 26.65 16.27 26.65 19.95Z"
+            fill="#B2C1E2"
+            fill-opacity="1.000000"
+            fill-rule="evenodd"
+          />
+        </svg>
+        <svg
+          width="40.000000"
+          height="40.000000"
+          viewBox="0 0 40 40"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+        >
+          <desc>Created with Pixso.</desc>
+          <defs />
+          <path
+            id="Tg"
+            d="M20 0C8.95 0 0 8.95 0 20C0 31.04 8.95 40 20 40C31.04 40 40 31.04 40 20C40 8.95 31.04 0 20 0ZM29.28 13.6C28.98 16.76 27.68 24.43 27.02 27.98C26.74 29.48 26.18 29.98 25.66 30.04C24.5 30.13 23.62 29.28 22.5 28.54C20.74 27.37 19.74 26.65 18.04 25.54C16.06 24.24 17.34 23.52 18.48 22.36C18.78 22.06 23.9 17.39 24 16.98C24.01 16.91 24.01 16.85 23.99 16.78C23.97 16.72 23.94 16.66 23.9 16.62C23.78 16.52 23.62 16.56 23.48 16.58C23.3 16.62 20.5 18.48 15.04 22.15C14.24 22.7 13.52 22.98 12.88 22.96C12.16 22.93 10.8 22.56 9.78 22.22C8.52 21.82 7.54 21.6 7.62 20.89C7.66 20.54 8.16 20.17 9.09 19.79C14.93 17.26 18.81 15.58 20.76 14.78C26.31 12.46 27.46 12.06 28.22 12.06C28.38 12.06 28.76 12.1 29 12.3C29.2 12.46 29.26 12.67 29.28 12.84C29.26 12.96 29.3 13.32 29.28 13.6Z"
+            fill="#B2C1E2"
+            fill-opacity="1.000000"
+            fill-rule="nonzero"
+          />
+        </svg>
+      </div>
+      <p>© 2024 FLUENTHUB | info@fluenthub.by</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

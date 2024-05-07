@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="common.css" />
+    <link rel="stylesheet" href="contacts.css" />
+
+    <link rel="stylesheet" href="header_footer.css" />
+
+    <title>Контакты</title>
+  </head>
+  <body>
+    <header>
+      <aside>
+        <button id="main-button" onclick="openLink('main')"></button>
+      </aside>
+      <button id="menuBurger"></button>
+      <nav>
+        <a href="schedule.html" class="menu-header-btn"> Расписание </a>
+        <a href="contacts.html" class="menu-header-btn"> Контакты </a>
+        <button
+          id="theme-button"
+          class="menu-header-btn"
+          onclick="changeTheme()"
+        >
+          <svg
+            width="30.000000"
+            height="30.000000"
+            viewBox="0 0 30 30"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+          >
+            <desc>Created with Pixso.</desc>
+            <defs>
+              <pattern
+                id="pattern_2_18890"
+                patternContentUnits="objectBoundingBox"
+                width="1.000000"
+                height="1.000000"
+              >
+                <use
+                  xlink:href="#image2_1889_0"
+                  transform="matrix(0.013889,0,0,0.013889,0,0)"
+                />
+              </pattern>
+              <image
+                id="image2_1889_0"
+                width="72.000000"
+                height="72.000000"
+                xlink:href="data:image/png;base64,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"
+              />
+            </defs>
+            <rect
+              id="Sun"
+              width="22.000000"
+              height="22.000000"
+              fill="url(#pattern_2_18890)"
+              fill-opacity="1.000000"
+            />
+          </svg>
+          Тема
+        </button>
+        <button id="closeBtn">Закрыть меню</button>
+      </nav>
+    </header>
+    <main>
+      <section id="section-one">
+        <h2>
+          ГДЕ ЖЕ НАС НАЙТИ?<br />
+          <em>ВОТ НАШИ КОНТАКТЫ</em>
+        </h2>
+        <div class="firIns" id="cns">
+          <div id="call">
+            <div id="callText">ЗВОНИТЕ НАМ. ПИШИТЕ НАМ.</div>
+            <div id="callBold">
+              <em class="emoji">☎️</em>
+              <p class="underlinedP" id="phoneCall">+375 29 553-67-45</p>
+            </div>
+            <div id="callBlue">
+              <em class="emoji">📬</em>
+              <p class="underlinedP" id="post">info@fluenthub.by</p>
+            </div>
+          </div>
+          <article id="time">
+            ВРЕМЯ РАБОТЫ:<br />
+            <p><em>ПН-ПТ:</em> 09.00-18.00</p>
+            <p><em>СБ-ВС:</em> выходной 🎉</p>
+          </article>
+        </div>
+        <div class="firIns" id="subs">
+          <h4 id="subscription-text">
+            А ТАКЖЕ ПОДПИСЫВАЙТЕСЬ<br />
+            НА НАШИ СОЦИАЛЬНЫЕ СЕТИ
+          </h4>
+          <div id="socials">
+            <svg
+              width="82"
+              height="82"
+              viewBox="0 0 82 82"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M41 0C18.368 0 0 18.368 0 41C0 63.632 18.368 82 41 82C63.632 82 82 63.632 82 41C82 18.368 63.632 0 41 0ZM60.024 27.88C59.409 34.358 56.744 50.102 55.391 57.359C54.817 60.434 53.669 61.459 52.603 61.582C50.225 61.787 48.421 60.024 46.125 58.507C42.517 56.129 40.467 54.653 36.982 52.357C32.923 49.692 35.547 48.216 37.884 45.838C38.499 45.223 48.995 35.67 49.2 34.809C49.2285 34.6786 49.2247 34.5432 49.189 34.4146C49.1532 34.286 49.0867 34.168 48.995 34.071C48.749 33.866 48.421 33.948 48.134 33.989C47.765 34.071 42.025 37.884 30.832 45.428C29.192 46.535 27.716 47.109 26.404 47.068C24.928 47.027 22.14 46.248 20.049 45.551C17.466 44.731 15.457 44.28 15.621 42.845C15.703 42.107 16.728 41.369 18.655 40.59C30.627 35.383 38.581 31.939 42.558 30.299C53.956 25.543 56.293 24.723 57.851 24.723C58.179 24.723 58.958 24.805 59.45 25.215C59.86 25.543 59.983 25.994 60.024 26.322C59.983 26.568 60.065 27.306 60.024 27.88Z"
+                fill="#4159BB"
+              />
+            </svg>
+
+            <svg
+              width="82"
+              height="82"
+              viewBox="0 0 82 82"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M40.5591 50.0621C39.3182 50.0621 38.1589 49.8335 37.0812 49.3763C36.0036 48.9192 35.0565 48.2824 34.2401 47.466C33.4237 46.6495 32.7869 45.6862 32.3298 44.5759C31.8726 43.4655 31.644 42.2899 31.644 41.049C31.644 39.808 31.8726 38.6487 32.3298 37.5711C32.7869 36.4934 33.4237 35.5464 34.2401 34.73C35.0565 33.9136 36.0036 33.2768 37.0812 32.8196C38.1589 32.3624 39.3182 32.1338 40.5591 32.1338C43.041 32.1338 45.1474 32.9992 46.8781 34.73C48.6089 36.4608 49.4743 38.5671 49.4743 41.049C49.4743 42.2899 49.2457 43.4655 48.7885 44.5759C48.3313 45.6862 47.6945 46.6495 46.8781 47.466C46.0617 48.2824 45.1147 48.9192 44.037 49.3763C42.9594 49.8335 41.8001 50.0621 40.5591 50.0621ZM54.8626 41.049C54.8626 40.4612 54.8299 39.857 54.7646 39.2366C54.6993 38.6161 54.6014 38.0446 54.4707 37.5221H58.4875V57.2139C58.4875 57.7364 58.3242 58.1609 57.9976 58.4875C57.671 58.814 57.2465 58.9773 56.724 58.9773H24.3943C23.8718 58.9773 23.4472 58.814 23.1207 58.4875C22.7941 58.1609 22.6308 57.7364 22.6308 57.2139V37.5221H26.6476C26.5169 38.0446 26.419 38.6161 26.3536 39.2366C26.2883 39.857 26.2557 40.4612 26.2557 41.049C26.2557 43.0084 26.6312 44.8698 27.3823 46.6332C28.1334 48.3967 29.1458 49.9315 30.4194 51.2378C31.693 52.544 33.2115 53.5727 34.9749 54.3238C36.7383 55.0749 38.5998 55.4504 40.5591 55.4504C42.5185 55.4504 44.3799 55.0749 46.1434 54.3238C47.9068 53.5727 49.4253 52.544 50.6989 51.2378C51.9725 49.9315 52.9849 48.3967 53.736 46.6332C54.4871 44.8698 54.8626 43.0084 54.8626 41.049ZM40.951 0C46.6332 0 51.9562 1.07766 56.92 3.23298C61.8837 5.38829 66.227 8.31103 69.9498 12.0012C73.6726 15.6914 76.6117 20.0183 78.767 24.9821C80.9223 29.9458 82 35.2688 82 40.951C82 46.6332 80.9223 51.9562 78.767 56.92C76.6117 61.8837 73.6726 66.227 69.9498 69.9498C66.227 73.6726 61.8837 76.6117 56.92 78.767C51.9562 80.9223 46.6332 82 40.951 82C35.2688 82 29.9458 80.9223 24.9821 78.767C20.0183 76.6117 15.6914 73.6726 12.0012 69.9498C8.31103 66.227 5.38829 61.8837 3.23298 56.92C1.07766 51.9562 0 46.6332 0 40.951C0 35.2688 1.07766 29.9458 3.23298 24.9821C5.38829 20.0183 8.31103 15.6914 12.0012 12.0012C15.6914 8.31103 20.0183 5.38829 24.9821 3.23298C29.9458 1.07766 35.2688 0 40.951 0ZM63.8757 23.1207C63.8757 21.6185 63.3532 20.3449 62.3082 19.2999C61.2632 18.2549 59.9896 17.7324 58.4875 17.7324H22.6308C21.1286 17.7324 19.855 18.2549 18.81 19.2999C17.765 20.3449 17.2425 21.6185 17.2425 23.1207V58.9773C17.2425 60.4795 17.765 61.7531 18.81 62.7981C19.855 63.8431 21.1286 64.3656 22.6308 64.3656H58.4875C59.9896 64.3656 61.2632 63.8431 62.3082 62.7981C63.3532 61.7531 63.8757 60.4795 63.8757 58.9773V23.1207ZM56.724 23.1207C57.2465 23.1207 57.671 23.3003 57.9976 23.6595C58.3242 24.0187 58.4875 24.4596 58.4875 24.9821V30.3704C58.4875 30.8929 58.3242 31.3174 57.9976 31.644C57.671 31.9705 57.2465 32.1338 56.724 32.1338H51.3357C50.8132 32.1338 50.3724 31.9705 50.0131 31.644C49.6539 31.3174 49.4743 30.8929 49.4743 30.3704V24.9821C49.4743 24.4596 49.6539 24.0187 50.0131 23.6595C50.3724 23.3003 50.8132 23.1207 51.3357 23.1207H56.724Z"
+                fill="#4159BB"
+              />
+            </svg>
+
+            <svg
+              width="82"
+              height="82"
+              viewBox="0 0 82 82"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M41 0C18.3575 0 0 18.4684 0 41.2475C0 61.8321 14.9911 78.8938 34.5952 82V53.1734H24.1801V41.2475H34.5952V32.1598C34.5952 21.8139 40.7171 16.1088 50.0783 16.1088C54.5642 16.1088 59.2632 16.9132 59.2632 16.9132V27.057H54.0803C48.9958 27.057 47.4048 30.2416 47.4048 33.5046V41.2393H58.7671L56.9506 53.1651H47.4048V81.9918C67.0089 78.902 82 61.8362 82 41.2475C82 18.4684 63.6425 0 41 0Z"
+                fill="#4159BB"
+              />
+            </svg>
+
+            <svg
+              width="82"
+              height="82"
+              viewBox="0 0 82 82"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M41 0C18.356 0 0 18.356 0 41C0 63.644 18.356 82 41 82C63.644 82 82 63.644 82 41C82 18.356 63.644 0 41 0ZM56.7679 46.2574C56.7679 46.2574 60.3939 49.8364 61.2865 51.4977C61.3121 51.5319 61.3249 51.566 61.3334 51.5831C61.6965 52.1939 61.7819 52.6679 61.6025 53.0224C61.3035 53.6118 60.2785 53.9022 59.9283 53.9278H53.5221C53.0779 53.9278 52.1469 53.8125 51.0194 53.0352C50.1524 52.4287 49.2982 51.4336 48.4654 50.4642C47.2226 49.0206 46.1464 47.7735 45.0616 47.7735C44.9238 47.7733 44.7868 47.7949 44.6558 47.8376C43.8358 48.1024 42.7852 49.2726 42.7852 52.3903C42.7852 53.3641 42.0165 53.9235 41.4741 53.9235H38.54C37.5406 53.9235 32.3345 53.5733 27.722 48.7089C22.0759 42.751 16.9936 30.8012 16.9509 30.6902C16.6306 29.9172 17.2926 29.5029 18.0144 29.5029H24.4847C25.3474 29.5029 25.6293 30.0282 25.8257 30.4937C26.0564 31.0361 26.902 33.1929 28.29 35.6188C30.5407 39.5735 31.9202 41.1794 33.0264 41.1794C33.2338 41.1769 33.4375 41.1242 33.62 41.0256C35.0635 40.2227 34.7945 35.0764 34.7304 34.0086C34.7304 33.8079 34.7261 31.7067 33.9873 30.6987C33.4577 29.9684 32.5566 29.6908 32.0099 29.5883C32.2312 29.283 32.5227 29.0355 32.8598 28.8666C33.8506 28.3711 35.6358 28.2985 37.4082 28.2985H38.3948C40.3167 28.3242 40.8121 28.448 41.5082 28.6231C42.9176 28.9605 42.9475 29.8702 42.8236 32.9836C42.7852 33.8677 42.7468 34.8671 42.7468 36.0458C42.7468 36.3021 42.734 36.5754 42.734 36.8658C42.6912 38.4503 42.64 40.2483 43.759 40.9872C43.9049 41.0787 44.0736 41.1275 44.2458 41.1281C44.6345 41.1281 45.8047 41.1281 48.9736 35.6914C49.951 33.9414 50.8002 32.123 51.5148 30.2503C51.5788 30.1393 51.7668 29.7976 51.9889 29.6652C52.1528 29.5817 52.3345 29.5391 52.5184 29.5414H60.1248C60.9533 29.5414 61.5214 29.6652 61.6281 29.9855C61.816 30.4937 61.594 32.0441 58.1218 36.7463L56.5715 38.792C53.4239 42.9176 53.4239 43.1269 56.7679 46.2574Z"
+                fill="#4159BB"
+              />
+            </svg>
+          </div>
+        </div>
+      </section>
+      <section id="section-two">
+        <h4 id="adr">адрес: <em>г. Минск, ул. Интернациональная, д.10</em></h4>
+        <div id="map">
+          <a
+            href="https://yandex.by/maps/157/minsk/?utm_medium=mapframe&utm_source=maps"
+            style="color: #eee; font-size: 12px; position: absolute; top: 0px"
+            >Минск</a
+          ><a
+            href="https://yandex.by/maps/157/minsk/house/Zk4YcwJiSkIFQFtpfXVxcXtkYw==/?ll=27.552436%2C53.900763&utm_medium=mapframe&utm_source=maps&z=17.89"
+            style="color: #eee; font-size: 12px; position: absolute; top: 14px"
+            >Интернациональная улица, 10 — Яндекс Карты</a
+          ><iframe
+            src="https://yandex.by/map-widget/v1/?ll=27.552436%2C53.900763&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgg2NjY2ODEyMRJR0JHQtdC70LDRgNGD0YHRjCwg0JzRltC90YHQuiwg0IbQvdGC0Y3RgNC90LDRhtGL0Y_QvdCw0LvRjNC90LDRjyDQstGD0LvRltGG0LAsIDEwIgoNQ2vcQRVlmldC&z=17.89"
+            width="560"
+            height="400"
+            style="position: relative"
+          ></iframe>
+        </div>
+      </section>
+      <section id="third-and-fourth-section">
+        <section id="section-three">
+          <aside class="logo"></aside>
+          <article>
+            <h5>ООО «ФлюентХаб»</h5>
+            <p>
+              Свидетельство о государственной регистрации юридического лица
+              №99999999 от 27.02.2024г выдано Минским горисполкомом
+            </p>
+            <h5>Юридический (почтовый) адрес:</h5>
+            <p>
+              220030, Республика Беларусь, г. Минск, ул. Интернациональная,
+              д.10, каб.102. <br />
+              Р/С BY06BPSB30123341490159330000 в<br />ОАО «Альфабанк» г. Минск
+              <br />
+              код BPSBBY2X, УНН 193688337
+            </p>
+            <p>
+              Адрес: 220030,
+              <em id="address">г. Минск, ул. Интернациональная, д.10</em>
+            </p>
+            <p>Электронная почта: <em id="link">info@fluenthub.by</em></p>
+          </article>
+        </section>
+        <section id="section-four">
+          <form>
+            <article>
+              <h2>ОСТАЛИСЬ ВОПРОСЫ? <br /><em>МЫ ПОЗВОНИМ</em></h2>
+              <p>
+                Оставляете свои контакты, мы Вам наберем и ответим на все
+                оставшиеся вопросы!
+              </p>
+            </article>
+            <aside>
+              <input
+                type="text"
+                name="userName"
+                id="nameInput"
+                placeholder="Ваше имя"
+              />
+              <input
+                maxlength="17"
+                type="tel"
+                name="phone"
+                pattern="[789][0-9]{9}"
+                id="phone"
+                placeholder="+375 (00) 000-00-00"
+              />
+              <button class="white-button">Записаться</button>
+            </aside>
+          </form>
+        </section>
+      </section>
+    </main>
+    <footer>
+      <h4 class="white-button-footer" id="scrollTop">FluentHub</h4>
+      <div>
+        <svg
+          width="40.000000"
+          height="40.000000"
+          viewBox="0 0 40 40"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+        >
+          <desc>Created with Pixso.</desc>
+          <defs />
+          <path
+            id="Vk"
+            d="M20 0C8.95 0 0 8.95 0 20C0 31.04 8.95 40 20 40C31.04 40 40 31.04 40 20C40 8.95 31.04 0 20 0ZM27.69 22.56C27.69 22.56 29.46 24.31 29.89 25.12C29.9 25.13 29.91 25.15 29.91 25.16C30.09 25.46 30.13 25.69 30.05 25.86C29.9 26.15 29.4 26.29 29.23 26.3L26.1 26.3C25.89 26.3 25.43 26.25 24.88 25.87C24.46 25.57 24.04 25.08 23.64 24.61C23.03 23.91 22.51 23.3 21.98 23.3C21.91 23.3 21.84 23.31 21.78 23.33C21.38 23.46 20.87 24.03 20.87 25.55C20.87 26.03 20.49 26.3 20.23 26.3L18.79 26.3C18.31 26.3 15.77 26.13 13.52 23.76C10.76 20.85 8.28 15.02 8.26 14.97C8.11 14.59 8.43 14.39 8.78 14.39L11.94 14.39C12.36 14.39 12.5 14.64 12.59 14.87C12.71 15.13 13.12 16.19 13.8 17.37C14.89 19.3 15.57 20.08 16.11 20.08C16.21 20.08 16.31 20.06 16.4 20.01C17.1 19.62 16.97 17.11 16.94 16.58C16.94 16.49 16.93 15.46 16.57 14.97C16.32 14.61 15.88 14.48 15.61 14.43C15.72 14.28 15.86 14.16 16.02 14.08C16.51 13.83 17.38 13.8 18.24 13.8L18.72 13.8C19.66 13.81 19.9 13.87 20.24 13.96C20.93 14.12 20.95 14.57 20.88 16.08C20.87 16.52 20.85 17 20.85 17.58C20.85 17.7 20.84 17.84 20.84 17.98C20.82 18.75 20.8 19.63 21.34 19.99C21.41 20.03 21.49 20.06 21.58 20.06C21.77 20.06 22.34 20.06 23.88 17.41C24.36 16.55 24.78 15.66 25.12 14.75C25.16 14.7 25.25 14.53 25.36 14.47C25.44 14.43 25.52 14.4 25.61 14.41L29.32 14.41C29.73 14.41 30.01 14.47 30.06 14.62C30.15 14.87 30.04 15.63 28.35 17.92L27.59 18.92C26.06 20.93 26.06 21.03 27.69 22.56Z"
+            fill="#B2C1E2"
+            fill-opacity="1.000000"
+            fill-rule="nonzero"
+          />
+        </svg>
+        <svg
+          width="40.000000"
+          height="40.000000"
+          viewBox="0 0 40 40"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+        >
+          <desc>Created with Pixso.</desc>
+          <defs />
+          <path
+            id="Innst"
+            d="M38.94 6.89C39.53 8.46 39.84 10.12 39.87 11.8C39.99 13.92 39.99 14.61 40 20.03C40 25.44 39.97 26.12 39.87 28.25C39.84 29.91 39.52 31.55 38.94 33.1C38.42 34.43 37.64 35.63 36.63 36.64C35.62 37.64 34.42 38.43 33.09 38.94C31.54 39.52 29.9 39.84 28.24 39.87C26.11 40 25.42 40 20 40C14.57 40 13.89 39.97 11.75 39.87C10.09 39.82 8.45 39.48 6.9 38.87C5.57 38.36 4.37 37.58 3.36 36.57C2.35 35.57 1.57 34.36 1.05 33.04C0.47 31.48 0.15 29.85 0.12 28.19C0 26.07 0 25.37 0 19.96C0 14.54 0.02 13.87 0.12 11.73C0.15 10.08 0.47 8.44 1.05 6.89C1.56 5.56 2.35 4.36 3.36 3.35C4.36 2.35 5.57 1.56 6.9 1.05C8.45 0.47 10.09 0.15 11.75 0.12C13.87 0 14.57 0 19.99 0C25.42 0 26.09 0.02 28.23 0.12C29.89 0.15 31.53 0.47 33.09 1.05C34.41 1.56 35.62 2.35 36.63 3.35C37.64 4.36 38.42 5.56 38.94 6.89ZM29.74 11.53C30.03 11.65 30.34 11.71 30.66 11.71C31.98 11.71 33.05 10.64 33.05 9.32C33.05 9 32.99 8.69 32.87 8.4C32.75 8.11 32.57 7.85 32.35 7.63C32.13 7.41 31.86 7.23 31.57 7.11C31.28 6.99 30.97 6.93 30.66 6.93C30.34 6.93 30.03 6.99 29.74 7.11C29.45 7.23 29.19 7.41 28.96 7.63C28.74 7.85 28.56 8.11 28.44 8.4C28.32 8.69 28.26 9 28.26 9.32C28.26 9.63 28.32 9.94 28.44 10.23C28.56 10.52 28.74 10.79 28.96 11.01C29.19 11.23 29.45 11.41 29.74 11.53ZM9.71 19.95C9.71 25.61 14.31 30.2 19.98 30.2C22.7 30.2 25.31 29.12 27.24 27.2C29.17 25.27 30.25 22.67 30.25 19.95C30.25 17.23 29.17 14.62 27.24 12.7C25.31 10.78 22.7 9.7 19.98 9.7C14.31 9.7 9.71 14.28 9.71 19.95ZM26.65 19.95C26.65 23.63 23.66 26.61 19.98 26.61C16.3 26.61 13.31 23.63 13.31 19.95C13.31 16.27 16.3 13.29 19.98 13.29C23.66 13.29 26.65 16.27 26.65 19.95Z"
+            fill="#B2C1E2"
+            fill-opacity="1.000000"
+            fill-rule="evenodd"
+          />
+        </svg>
+        <svg
+          width="40.000000"
+          height="40.000000"
+          viewBox="0 0 40 40"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+        >
+          <desc>Created with Pixso.</desc>
+          <defs />
+          <path
+            id="Tg"
+            d="M20 0C8.95 0 0 8.95 0 20C0 31.04 8.95 40 20 40C31.04 40 40 31.04 40 20C40 8.95 31.04 0 20 0ZM29.28 13.6C28.98 16.76 27.68 24.43 27.02 27.98C26.74 29.48 26.18 29.98 25.66 30.04C24.5 30.13 23.62 29.28 22.5 28.54C20.74 27.37 19.74 26.65 18.04 25.54C16.06 24.24 17.34 23.52 18.48 22.36C18.78 22.06 23.9 17.39 24 16.98C24.01 16.91 24.01 16.85 23.99 16.78C23.97 16.72 23.94 16.66 23.9 16.62C23.78 16.52 23.62 16.56 23.48 16.58C23.3 16.62 20.5 18.48 15.04 22.15C14.24 22.7 13.52 22.98 12.88 22.96C12.16 22.93 10.8 22.56 9.78 22.22C8.52 21.82 7.54 21.6 7.62 20.89C7.66 20.54 8.16 20.17 9.09 19.79C14.93 17.26 18.81 15.58 20.76 14.78C26.31 12.46 27.46 12.06 28.22 12.06C28.38 12.06 28.76 12.1 29 12.3C29.2 12.46 29.26 12.67 29.28 12.84C29.26 12.96 29.3 13.32 29.28 13.6Z"
+            fill="#B2C1E2"
+            fill-opacity="1.000000"
+            fill-rule="nonzero"
+          />
+        </svg>
+      </div>
+      <p>© 2024 FLUENTHUB | info@fluenthub.by</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
