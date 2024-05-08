@@ -640,6 +640,7 @@ body {
   .heading-language h3 {
     font-size: 3.9vw;
     text-align: center;
+    text-wrap: nowrap;
     width: 47.6vw;
     margin: 0;
     margin-bottom: 2vw;
@@ -961,10 +962,11 @@ body {
   }
 
   .heading-language h3 {
-    font-size: 24px;
+    font-size: 6.3vw;
     width: 77.63vw;
     margin: 0;
     margin-right: 13.95vw;
+    text-wrap: wrap;
     margin-bottom: 2vh;
     text-align: start;
   }
