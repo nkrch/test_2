@@ -9,7 +9,7 @@ function formAct() {
   console.log("form");
 }
 
-document.getElementById("scrollTop").onclick = scrollTop;
+document.getElementById("scroll-top").onclick = scrollTop;
 
 function scrollTop() {
   console.log("scroll");
@@ -59,7 +59,7 @@ function adrFunc() {
 }
 
 //menu
-document.getElementById("menuBurger").onclick = menuBurger;
+document.getElementById("menu-burger").onclick = menuBurger;
 document.getElementsByTagName("nav")[0].style.backgroundColor = "white";
 document.getElementsByTagName("nav")[0].style.position = "absolute";
 function menuBurger() {
@@ -140,7 +140,7 @@ const body = document.getElementsByTagName("body")[0],
   form = document.getElementsByTagName("form"),
   input = document.getElementsByTagName("input"),
   whitebutton = document.getElementsByClassName("white-button"),
-  langCard = document.getElementsByClassName("langCard"),
+  langCard = document.getElementsByClassName("lang-card"),
   section = document.getElementsByTagName("section");
 const darkTheme = {
   background: "#1E1E1E",
@@ -230,7 +230,7 @@ function colors(objTheme) {
   body.style.backgroundColor = objTheme.background;
   body.style.color = objTheme.color;
   document.getElementById(
-    "menuBurger"
+    "menu-burger"
   ).style.filter = `invert(${objTheme.mainBtnInvert})`;
   colorFC(buttons, objTheme);
   colorFC(h3, objTheme);

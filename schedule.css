@@ -1,256 +1,122 @@
 @font-face {
-    font-family: Inter;
-    src: url('Inter-Regular.otf');
+  font-family: Inter;
+  src: url("Inter-Regular.otf");
 }
 @font-face {
-    font-family: InterExBoIt;
-    src: url('Inter-ExtraBoldItalic.otf');
+  font-family: InterExBoIt;
+  src: url("Inter-ExtraBoldItalic.otf");
 }
 @font-face {
-    font-family: InterMedium;
-    src: url('Inter-Medium.otf');
+  font-family: InterMedium;
+  src: url("Inter-Medium.otf");
 }
 @font-face {
-    font-family: InterSemiBold;
-    src: url('Inter-SemiBold.otf');
+  font-family: InterSemiBold;
+  src: url("Inter-SemiBold.otf");
 }
 
 @media screen and (min-width: 1440px) {
-    main{
-        display: flex;
-        flex-direction: column;
-        border-top: 1px solid black;
-        padding-left: 120px;
-        height: 1661px;
-        width: 1320px;
-    }
-    .sch-cont{
-        gap: 25px;
-        height: 1340px;
-        display: flex;
-        flex-direction: column;
-    }
-    h2{
+  main {
+    display: flex;
+    flex-direction: column;
+    border-top: 1px solid black;
+    padding-left: 120px;
+    height: 1661px;
+    width: 1320px;
+  }
+  .sch-cont {
+    gap: 25px;
+    height: 1340px;
+    display: flex;
+    flex-direction: column;
+  }
+  h2 {
     font-family: InterExBoIt;
     font-size: 64px;
     text-transform: uppercase;
     margin-top: 60px;
     margin-bottom: 60px;
-    
-    }
-    li{
-        list-style-type: none;
-    }
-    .sch-elem{
-        border: 1px solid black;
-        display: flex;
-        border-radius: 25px;
-        width: 1125px;
-        height:90px;
-        padding-left: 40px;
-        padding-right: 40px;
-        padding-top: 40px;
-        padding-bottom: 40px;
-        
-    }
-    
-    .sch-elem section{
-        
-        font-size: 32px;
-        
-        width: 274px;
-        margin: 0%;
-        font-family: InterSemiBold;
-    }
-    
-    .sch-elem h3 div{
-        
-    }
-    .lang{
-        display: flex;
-        align-items: center;
-        gap: 5px;
-        
-        
-    }
-    .brFlag{
-        width: 32px;
-        height: 32px;
-        
-        background-image: url('brFlag.png');
-        background-position: center;
-        background-size: contain;
-        background-repeat: no-repeat;
-    }
-    .sch-elem p{
-        width: 357px;
-        margin: 0;
-    }
-    
-    .desc{
-        margin-left: 102px;
-        margin-right: 148px;
-        font-family: Inter;
-        display: flex;
-        flex-direction: column;
-        gap: 15px;
-        font-size: 20px;
-        line-height: 20px;
-    }
-    
-    .desc em{
-        font-family: InterSemiBold;
-        font-style: normal;
-    }
-    
-    .price-tag{
-        height: 90px;
-        font-family: Inter;
-        display: flex;
-        flex-direction: column;
-        align-items: flex-end;
-    gap: 12px;
-    }
-    
-    .price-tag h5{
-        font-size: 32px;
-        margin: 0;
-        line-height: 36px;
-        font-weight: normal;
-       
-    }
-    
-    .price-tag button{
-        width: 260px;
-        height: 42px;
-        background-color: #4159BB;
-        font-family: InterMedium;
-        font-weight: normal;
-        color: white;
-        font-size: 16px;
-        font-weight: 350;
-        border-radius: 40px;
-        border: 0cap;
-    }
-}
-
-
-main{
-    display: flex;
-    flex-direction: column;
-    border-top: 1px solid black;
-    padding-left: 4.2vw;
-    padding-right: 4.2vw;
-    height: 1661px;
-    width: 91.6vw;
-}
-
-main h2{
-    padding-left: 4vw;
-    
-}
-.sch-cont{
-    gap: 25px;
-    height: 1340px;
-    display: flex;
-    flex-direction: column;
-}
-h2{
-font-family: InterExBoIt;
-font-size: 64px;
-text-transform: uppercase;
-margin-top: 60px;
-margin-bottom: 60px;
-
-
-}
-li{
+  }
+  li {
     list-style-type: none;
-}
-.sch-elem{
+  }
+  .sch-elem {
     border: 1px solid black;
     display: flex;
     border-radius: 25px;
-    width: 78.1vw;
-    height:90px;
-    margin-left: 1.2vw;
-    padding-left: 2.7vw;
-    padding-right: 2.7vw;
+    width: 1125px;
+    height: 90px;
+    padding-left: 40px;
+    padding-right: 40px;
     padding-top: 40px;
     padding-bottom: 40px;
-    
-}
+  }
 
-.sch-elem section{
-    
-    font-size: 2.2vw;
-    
-    width: 19vw;
+  .sch-elem section {
+    font-size: 32px;
+
+    width: 274px;
     margin: 0%;
     font-family: InterSemiBold;
-}
+  }
 
-.sch-elem h3 div{
-    
-}
-.lang{
+  .sch-elem h3 div {
+  }
+  .lang {
     display: flex;
     align-items: center;
     gap: 5px;
-    width: 19vw;
-    
-}
-.brFlag{
+  }
+  .brflag {
     width: 32px;
     height: 32px;
-    
-    background-image: url('brFlag.png');
+
+    background-image: url("brFlag.png");
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
-}
-.sch-elem p{
-    width: 24.7vw;
+  }
+  .sch-elem p {
+    width: 357px;
     margin: 0;
-}
+  }
 
-.desc{
-    margin-left: 7vw;
-    margin-right: 10.2vw;
+  .desc {
+    margin-left: 102px;
+    margin-right: 148px;
     font-family: Inter;
     display: flex;
     flex-direction: column;
     gap: 15px;
-    font-size: 1.3vw;
+    font-size: 20px;
     line-height: 20px;
-}
+  }
 
-.desc em{
+  .desc em {
     font-family: InterSemiBold;
     font-style: normal;
-}
+  }
 
-.price-tag{
+  .price-tag {
     height: 90px;
     font-family: Inter;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-gap: 12px;
-}
+    gap: 12px;
+  }
 
-.price-tag h5{
+  .price-tag h5 {
     font-size: 32px;
     margin: 0;
     line-height: 36px;
     font-weight: normal;
-   
-}
+  }
 
-.price-tag button{
-    width: 18vw;
+  .price-tag button {
+    width: 260px;
     height: 42px;
-    background-color: #4159BB;
+    background-color: #4159bb;
     font-family: InterMedium;
     font-weight: normal;
     color: white;
@@ -258,126 +124,239 @@ gap: 12px;
     font-weight: 350;
     border-radius: 40px;
     border: 0cap;
+  }
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  border-top: 1px solid black;
+  padding-left: 4.2vw;
+  padding-right: 4.2vw;
+  height: 1661px;
+  width: 91.6vw;
+}
+
+main h2 {
+  padding-left: 4vw;
+}
+.sch-cont {
+  gap: 25px;
+  height: 1340px;
+  display: flex;
+  flex-direction: column;
+}
+h2 {
+  font-family: InterExBoIt;
+  font-size: 64px;
+  text-transform: uppercase;
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+li {
+  list-style-type: none;
+}
+.sch-elem {
+  border: 1px solid black;
+  display: flex;
+  border-radius: 25px;
+  width: 78.1vw;
+  height: 90px;
+  margin-left: 1.2vw;
+  padding-left: 2.7vw;
+  padding-right: 2.7vw;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.sch-elem section {
+  font-size: 2.2vw;
+
+  width: 19vw;
+  margin: 0%;
+  font-family: InterSemiBold;
+}
+
+.sch-elem h3 div {
+}
+.lang {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  width: 19vw;
+}
+.brflag {
+  width: 32px;
+  height: 32px;
+
+  background-image: url("brFlag.png");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.sch-elem p {
+  width: 24.7vw;
+  margin: 0;
+}
+
+.desc {
+  margin-left: 7vw;
+  margin-right: 10.2vw;
+  font-family: Inter;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  font-size: 1.3vw;
+  line-height: 20px;
+}
+
+.desc em {
+  font-family: InterSemiBold;
+  font-style: normal;
+}
+
+.price-tag {
+  height: 90px;
+  font-family: Inter;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 12px;
+}
+
+.price-tag h5 {
+  font-size: 32px;
+  margin: 0;
+  line-height: 36px;
+  font-weight: normal;
+}
+
+.price-tag button {
+  width: 18vw;
+  height: 42px;
+  background-color: #4159bb;
+  font-family: InterMedium;
+  font-weight: normal;
+  color: white;
+  font-size: 16px;
+  font-weight: 350;
+  border-radius: 40px;
+  border: 0cap;
 }
 
 @font-face {
-    font-family: Inter;
-    src: url('Inter-Regular.otf');
+  font-family: Inter;
+  src: url("Inter-Regular.otf");
 }
 @font-face {
-    font-family: InterExBoIt;
-    src: url('Inter-ExtraBoldItalic.otf');
+  font-family: InterExBoIt;
+  src: url("Inter-ExtraBoldItalic.otf");
 }
 @font-face {
-    font-family: InterMedium;
-    src: url('Inter-Medium.otf');
+  font-family: InterMedium;
+  src: url("Inter-Medium.otf");
 }
 @font-face {
-    font-family: InterSemiBold;
-    src: url('Inter-SemiBold.otf');
+  font-family: InterSemiBold;
+  src: url("Inter-SemiBold.otf");
 }
 
-@media (max-width: 769px){
-    body{
-        width: 100vw;
-        display: flex;
-        flex-direction: column;
-    }
-main{
+@media (max-width: 769px) {
+  body {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+  }
+  main {
     display: flex;
     flex-direction: column;
     border-top: 1px solid black;
-    
+
     padding-left: 7.8vw;
     padding-right: 7.8vw;
     padding-bottom: 30px;
     width: 84.3vw;
     height: auto;
-}
-.sch-cont{
+  }
+  .sch-cont {
     gap: 3.2vw;
     height: auto;
     display: flex;
     flex-direction: column;
     padding-left: 0;
     margin-top: -2vw;
-}
-h2{
-font-family: InterExBoIt;
-font-size: 8.3vw;
-margin-top: 7.8vw;
-margin-bottom: 7.8vw;
-text-transform: uppercase;
-align-self: center;
-margin-left: 0%;
-
-}
-.sch-cont li{
+  }
+  h2 {
+    font-family: InterExBoIt;
+    font-size: 8.3vw;
+    margin-top: 7.8vw;
+    margin-bottom: 7.8vw;
+    text-transform: uppercase;
+    align-self: center;
+    margin-left: 0%;
+  }
+  .sch-cont li {
     list-style-type: none;
-}
-.sch-elem{
+  }
+  .sch-elem {
     border: 1px solid black;
     display: flex;
     border-radius: 25px;
     width: 75.2vw;
-    height:252px;
+    height: 252px;
     flex-direction: column;
     padding-left: 4.5vw;
     padding-right: 4.5vw;
     padding-top: 40px;
     padding-bottom: 40px;
-    justify-content: center
-    
-}
+    justify-content: center;
+  }
 
-.sch-elem section{
+  .sch-elem section {
     padding-left: 1vw;
     align-items: center;
     display: flex;
     gap: 10px;
-    width:  35.6vw;
-    
+    width: 35.6vw;
+
     margin: 0%;
     font-family: InterSemiBold;
     font-size: 5vw;
     justify-content: center;
     align-self: center;
-}
+  }
 
-.sch-elem h3 div{
-    
-}
-.lang{
+  .sch-elem h3 div {
+  }
+  .lang {
     display: flex;
     align-items: center;
     gap: 0.5vw;
     font-family: InterSemiBold;
     width: 68vw;
     font-size: 5vw;
-}
-.brFlag{
+  }
+  .brflag {
     width: 32px;
     height: 32px;
     margin-right: 6.5vw;
-    background-image: url('brFlag.png');
+    background-image: url("brFlag.png");
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
-}
-.sch-elem p{
+  }
+  .sch-elem p {
     width: 70.4vw;
     height: auto;
     line-height: normal;
     margin: 0;
-    
-    
-}
-#timeW{
+  }
+  #timeW {
     display: flex;
     word-break: break-all;
     text-wrap: wrap;
-}
-.desc{
+  }
+  .desc {
     margin-left: 13.2vw;
     margin-right: 19.2vw;
     margin: 0%;
@@ -391,44 +370,41 @@ margin-left: 0%;
     height: auto;
     margin-top: 32px;
     margin-bottom: -32px;
-    
-    
-    
-}
+  }
 
-.desc p,em{
-    word-wrap:break-word;
+  .desc p,
+  em {
+    word-wrap: break-word;
     text-wrap: wrap;
-}
+  }
 
-.desc em{
+  .desc em {
     font-family: InterSemiBold;
     font-style: normal;
-    
-}
+  }
 
-.price-tag{
+  .price-tag {
     height: 90px;
     font-family: Inter;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-gap: 12px;
-}
+    gap: 12px;
+  }
 
-.price-tag h5{
+  .price-tag h5 {
     font-size: 4.2vw;
-    
+
     margin: 0;
     line-height: 36px;
     font-weight: normal;
-   display: flex;
-}
+    display: flex;
+  }
 
-.price-tag button{
+  .price-tag button {
     width: 260px;
     height: 42px;
-    background-color: #4159BB;
+    background-color: #4159bb;
     font-family: InterMedium;
     font-weight: normal;
     color: white;
@@ -437,109 +413,105 @@ gap: 12px;
     border-radius: 40px;
     border: 0cap;
     align-self: center;
-}}
+  }
+}
 
-@media (max-width: 381px){
-    body{
-        width: 100wv;
-        display: flex;
-        flex-direction: column;
-    }
-main{
+@media (max-width: 381px) {
+  body {
+    width: 100wv;
+    display: flex;
+    flex-direction: column;
+  }
+  main {
     display: flex;
     flex-direction: column;
     border-top: 1px solid black;
-    
-    padding-left: 8.30vw;
-    padding-right: 8.30vw;
+
+    padding-left: 8.3vw;
+    padding-right: 8.3vw;
     padding-bottom: 5.26vw;
     width: 84.3vw;
     height: auto;
-}
-.sch-cont{
+  }
+  .sch-cont {
     gap: 3.2vw;
     height: auto;
     display: flex;
     flex-direction: column;
     padding-left: 0;
     margin-top: -2vw;
-}
-h2{
-font-family: InterExBoIt;
-font-size: 10.53vw;
-margin-top: 12.53vw;
-margin-bottom: 10.53vw;
-text-transform: uppercase;
-align-self: center;
-margin-left: 0%;
-
-}
-li{
+  }
+  h2 {
+    font-family: InterExBoIt;
+    font-size: 10.53vw;
+    margin-top: 12.53vw;
+    margin-bottom: 10.53vw;
+    text-transform: uppercase;
+    align-self: center;
+    margin-left: 0%;
+  }
+  li {
     list-style-type: none;
-}
-.sch-elem{
+  }
+  .sch-elem {
     border: 1px solid black;
     display: flex;
     border-radius: 25px;
     width: 75.2vw;
-    height:55.84vw;
+    height: 55.84vw;
     flex-direction: column;
     padding-left: 4.5vw;
     padding-right: 4.5vw;
     padding-top: 10.55vw;
     padding-bottom: 5.25;
-    justify-content: center
-    
-}
+    justify-content: center;
+  }
 
-.sch-elem section{
+  .sch-elem section {
     padding-left: 1vw;
     align-items: center;
     display: flex;
     gap: 1vw;
-    width:  35.6vw;
+    width: 35.6vw;
     margin-bottom: 0vw;
     margin: 0%;
     font-family: InterSemiBold;
     font-size: 5.95vw;
     justify-content: center;
     align-self: center;
-}
+  }
 
-.sch-elem h3 div{
-    
-}
-.lang{
+  .sch-elem h3 div {
+  }
+  .lang {
     display: flex;
     align-items: center;
     gap: 1vw;
     font-family: InterSemiBold;
     width: 91.5vw;
     font-size: 5.95vw;
-}
-.brFlag{
+  }
+  .brflag {
     width: 5vw;
     height: 5.26vw;
     margin-right: 1vw;
-    background-image: url('brFlag.png');
+    background-image: url("brFlag.png");
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
-}
-.sch-elem p{
+  }
+  .sch-elem p {
     width: 70.7vw;
     height: auto;
     line-height: normal;
     margin: 0;
-    
-    
-}
-#timeW{
+  }
+  #timeW {
     display: flex;
     word-break: break-all;
     text-wrap: wrap;
-}
-.desc{
+  }
+  .desc {
     margin-left: 13.2vw;
     margin-right: 19.2vw;
     margin: 0%;
@@ -553,45 +525,42 @@ li{
     height: auto;
     margin-top: 5.26vw;
     margin-bottom: 0vw;
-    
-    
-    
-}
+  }
 
-.desc p,em{
-    word-wrap:break-word;
+  .desc p,
+  em {
+    word-wrap: break-word;
     text-wrap: wrap;
-}
+  }
 
-.desc em{
+  .desc em {
     font-family: InterSemiBold;
     font-style: normal;
-    
-}
+  }
 
-.price-tag{
+  .price-tag {
     height: 90px;
     font-family: Inter;
     display: flex;
     flex-direction: column;
     align-items: center;
-gap: 12px;
-margin-top: 2.6vw;
-}
+    gap: 12px;
+    margin-top: 2.6vw;
+  }
 
-.price-tag h5{
+  .price-tag h5 {
     font-size: 6.23vw;
-    
+
     margin: 0;
     line-height: 36px;
     font-weight: normal;
-   display: flex;
-}
+    display: flex;
+  }
 
-.price-tag button{
+  .price-tag button {
     width: 75.79vw;
     height: 11.05vw;
-    background-color: #4159BB;
+    background-color: #4159bb;
     font-family: InterMedium;
     font-weight: normal;
     color: white;
@@ -600,8 +569,9 @@ margin-top: 2.6vw;
     border-radius: 40px;
     border: 0cap;
     align-self: center;
-}}
+  }
+}
 
-.white-button{
-    box-shadow: none;
+.white-button {
+  box-shadow: none;
 }

@@ -1,446 +1,431 @@
-header{
-    display: flex;
-    justify-content: space-between;
-    padding-left:8.3vw;
-    padding-right:8.3vw;
-    height: 84px;
-    width: 83.3vw;
-    align-items: center;
-    position: fixed;
-    background-color: white;
-    border-bottom: 1px solid black;
-    z-index: 5;
+header {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 8.3vw;
+  padding-right: 8.3vw;
+  height: 84px;
+  width: 83.3vw;
+  align-items: center;
+  position: fixed;
+  background-color: white;
+  border-bottom: 1px solid black;
+  z-index: 5;
 }
-main{
-    padding-top: 84px;
+main {
+  padding-top: 84px;
 }
-header button{
-    background-color: rgba(250, 235, 215, 0);
-    border: 0ch;
-    font-size:1vh;
-    
-    
+header button {
+  background-color: rgba(250, 235, 215, 0);
+  border: 0ch;
+  font-size: 1vh;
 }
 
-#headerMenu{
-    display: flex;
-    flex-direction: row;
-    width: 50vw;
+#headerMenu {
+  display: flex;
+  flex-direction: row;
+  width: 50vw;
 }
-header nav{
-    /*min-width: 42%;
+header nav {
+  /*min-width: 42%;
     
     max-width: 350px ;*/
-    margin-left: 0;
-    padding-left: 0;
-    width: 41vw;
-    
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    position: relative;
-    right: 0%;
-    padding-right: 8.3vw;
-    
+  margin-left: 0;
+  padding-left: 0;
+  width: 41vw;
+
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  position: relative;
+  right: 0%;
+  padding-right: 8.3vw;
 }
 
-#navElem{
-    min-width: 42%;
-    margin-left: 0;
-    padding-left: 0;
-    max-width: 350px ;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap
+#navElem {
+  min-width: 42%;
+  margin-left: 0;
+  padding-left: 0;
+  max-width: 350px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 @font-face {
-    font-family: Inter;
-    src: url('Inter-V.ttf');
+  font-family: Inter;
+  src: url("Inter-V.ttf");
 }
-#main-button{
+#main-button {
+  margin-top: 4vh;
+  width: 184px;
+  height: 38px;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-bottom: 4vh;
+  font-family: Inter;
+  transform: scaleY(1.05);
+  flex-direction: column;
+  background-image: url("logoBlack.png");
+}
+
+.menu-header-btn {
+  font-size: 14px;
+  font-family: Inter;
+}
+header button,
+a {
+  text-decoration: none;
+  color: black;
+  display: flex;
+  align-items: center;
+  font-family: Inter;
+}
+
+header button svg {
+  margin-top: 4.7px;
+  margin-right: -5.5px;
+}
+
+#moonImg {
+  width: 18px;
+  height: 18px;
+  margin-right: 0.5vw;
+  margin-top: -2px;
+  background-size: contain;
+  background-position: center;
+  background-image: url("moon.png");
+}
+
+footer {
+  width: 100vw;
+  height: 252px;
+  background-color: #4159bb;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+
+@font-face {
+  font-family: InterEm;
+  src: url("Inter-BoldItalic.otf");
+}
+
+footer h4 {
+  font-family: InterEm;
+  color: white;
+  font-size: 35px;
+  margin: 0%;
+}
+footer div {
+  width: 184px;
+  display: flex;
+
+  justify-content: space-around;
+}
+footer p {
+  color: #b2c1e2;
+  font-size: 14px;
+  font-family: Inter;
+}
+
+#menu-burger {
+  position: unset;
+}
+
+#closeBtn {
+  position: unset;
+  display: none;
+}
+
+@media (max-width: 769px) {
+  header nav {
+    /*min-width: 42%;
+        
+        max-width: 350px ;*/
+    margin-left: 0;
+    padding-left: 0;
+    width: 55vw;
+    height: 50vw;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: column;
+    position: absolute;
+    right: -70vw;
+    border: 1px solid #4159bb;
+  }
+
+  header {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 7.8vw;
+    padding-right: 7.8vw;
+    height: 100px;
+    width: 84.4vw;
+    align-items: center;
+  }
+  header button {
+    border: 0ch;
+    font-size: 1vh;
+  }
+
+  #headerMenu {
+    display: flex;
+    flex-direction: row;
+    width: 50vw;
+  }
+
+  #menu-burger {
+    width: 60px;
+    height: 30px;
+    background-image: url("menu.png");
+    background-position: center;
+    background-size: contain;
+  }
+
+  #navElem {
+    min-width: 42%;
+    margin-left: 0;
+    padding-left: 0;
+    max-width: 350px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  @font-face {
+    font-family: Inter;
+    src: url("Inter-V.ttf");
+  }
+  #main-button {
     margin-top: 4vh;
     width: 184px;
     height: 38px;
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
-    margin-bottom: 4vh;
+    margin-bottom: 30px;
     font-family: Inter;
     transform: scaleY(1.05);
     flex-direction: column;
-    background-image: url('logoBlack.png');
-}
+    background-image: url("logoBlack.png");
+  }
 
-.menu-header-btn{
-font-size: 14px;
-font-family: Inter;
-}
-header button,a{
+  .menu-header-btn,
+  nav button {
+    font-size: 5vw;
+    height: 23.7%;
+    padding-left: 7vw;
+    border: 1px solid #8e8e8e00;
+  }
+
+  .menu-header-btn:active,
+  nav button:active {
+    background-color: #4159bb;
+  }
+  header button,
+  a {
     text-decoration: none;
     color: black;
     display: flex;
     align-items: center;
     font-family: Inter;
-}
+  }
 
-header button svg{
+  header button svg {
     margin-top: 4.7px;
     margin-right: -5.5px;
-}
+  }
 
-#moonImg{
+  #moonImg {
     width: 18px;
     height: 18px;
     margin-right: 0.5vw;
     margin-top: -2px;
     background-size: contain;
     background-position: center;
-    background-image: url('moon.png');
-}
+    background-image: url("moon.png");
+  }
 
-footer{
+  footer {
     width: 100vw;
-    height: 252px;
-    background-color: #4159BB;
+    height: 262px;
+    background-color: #4159bb;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     gap: 30px;
-}
+  }
 
-@font-face {
+  @font-face {
     font-family: InterEm;
-    src: url('Inter-BoldItalic.otf');
-}
+    src: url("Inter-BoldItalic.otf");
+  }
 
-footer h4{
-font-family: InterEm;
-color: white;
-font-size: 35px;
-margin: 0%;
-}
-footer div{
+  footer h4 {
+    font-family: InterEm;
+    color: white;
+    font-size: 35px;
+    margin: 0%;
+  }
+  footer div {
     width: 184px;
     display: flex;
-    
-    justify-content: space-around
-}
-footer p{
-    color: #B2C1E2;
+
+    justify-content: space-around;
+  }
+  footer p {
+    color: #b2c1e2;
     font-size: 14px;
     font-family: Inter;
+  }
 }
 
-#menuBurger{
-    position: unset;
-}
-
-#closeBtn{
-    position: unset;
-    display: none;
-}
-
-@media (max-width: 769px){
-
-    header nav{
-        /*min-width: 42%;
+@media (max-width: 381px) {
+  header nav {
+    /*min-width: 42%;
         
         max-width: 350px ;*/
-        margin-left: 0;
-        padding-left: 0;
-        width: 55vw;
-        height: 50vw;
-        display: flex;
-        justify-content: space-between;
-        flex-wrap: wrap;
-        flex-direction: column;
-        position: absolute;
-        right: -70vw;
-        border: 1px solid #4159BB;
-        
-        
-    }
-
-
-
-    header{
-        display: flex;
-        justify-content: space-between;
-        padding-left:7.8vw;
-        padding-right:7.8vw;
-        height: 100px;
-        width: 84.4vw;
-        align-items: center
-    }
-    header button{
-        
-        border: 0ch;
-        font-size:1vh;
-        
-        
-    }
-    
-    #headerMenu{
-        display: flex;
-        flex-direction: row;
-        width: 50vw;
-    }
-    
-    
-#menuBurger{
-    
-    width: 60px;
-    height: 30px;
-    background-image: url('menu.png');
-        background-position: center;
-        background-size: contain;
-}
-
-    #navElem{
-        min-width: 42%;
-        margin-left: 0;
-        padding-left: 0;
-        max-width: 350px ;
-        display: flex;
-        justify-content: space-between;
-        flex-wrap: wrap
-    }
-    
-    @font-face {
-        font-family: Inter;
-        src: url('Inter-V.ttf');
-    }
-    #main-button{
-        margin-top: 4vh;
-        width: 184px;
-        height: 38px;
-        background-position: center;
-        background-size: contain;
-        background-repeat: no-repeat;
-        margin-bottom: 30px;
-        font-family: Inter;
-        transform: scaleY(1.05);
-        flex-direction: column;
-        background-image: url('logoBlack.png');
-    }
-    
-    .menu-header-btn, nav button{
+    margin-left: 0;
+    padding-left: 0;
+    width: 55vw;
+    height: 50vw;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: column;
+    position: absolute;
+    right: -70vw;
+    border: 1px solid #4159bb;
+  }
+  .menu-header-btn,
+  nav button,
+  #closeBtn {
     font-size: 5vw;
     height: 23.7%;
     padding-left: 7vw;
     border: 1px solid #8e8e8e00;
-    }
+  }
 
-    .menu-header-btn:active, nav button:active{
-        background-color: #4159BB;
-        }
-    header button,a{
-        text-decoration: none;
-        color: black;
-        display: flex;
-        align-items: center;
-        font-family: Inter;
-    }
-    
-    header button svg{
-        margin-top: 4.7px;
-        margin-right: -5.5px;
-    }
-    
-    #moonImg{
-        width: 18px;
-        height: 18px;
-        margin-right: 0.5vw;
-        margin-top: -2px;
-        background-size: contain;
-        background-position: center;
-        background-image: url('moon.png');
-    }
-    
-    footer{
-        width: 100vw;
-        height: 262px;
-        background-color: #4159BB;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        gap: 30px;
-    }
-    
-    @font-face {
-        font-family: InterEm;
-        src: url('Inter-BoldItalic.otf');
-    }
-    
-    footer h4{
-    font-family: InterEm;
-    color: white;
-    font-size: 35px;
-    margin: 0%;
-    }
-    footer div{
-        width: 184px;
-        display: flex;
-        
-        justify-content: space-around
-    }
-    footer p{
-        color: #B2C1E2;
-        font-size: 14px;
-        font-family: Inter;
-    }
-    
-}
+  .menu-header-btn:active,
+  nav button:active {
+    background-color: #4159bb;
+  }
+  header {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 7.8vw;
+    padding-right: 7.8vw;
+    height: 26.3vw;
+    width: 84.4vw;
+    align-items: center;
+  }
+  header button {
+    border: 0ch;
+    font-size: 1vh;
+  }
 
+  #headerMenu {
+    display: flex;
+    flex-direction: row;
+    width: 50vw;
+  }
 
-@media (max-width: 381px){
-    header nav{
-        /*min-width: 42%;
-        
-        max-width: 350px ;*/
-        margin-left: 0;
-        padding-left: 0;
-        width: 55vw;
-        height: 50vw;
-        display: flex;
-        justify-content: space-between;
-        flex-wrap: wrap;
-        flex-direction: column;
-        position: absolute;
-        right: -70vw;
-        border: 1px solid #4159BB;
-        
-    }
-    .menu-header-btn, nav button,#closeBtn{
-        font-size: 5vw;
-        height: 23.7%;
-        padding-left: 7vw;
-        border: 1px solid #8e8e8e00;
-        }
-    
-        .menu-header-btn:active, nav button:active{
-            background-color: #4159BB;
-            }
-    header{
-        display: flex;
-        justify-content: space-between;
-        padding-left:7.8vw;
-        padding-right:7.8vw;
-        height: 26.3vw;
-        width: 84.4vw;
-        align-items: center
-    }
-    header button{
-        
-        border: 0ch;
-        font-size:1vh;
-        
-        
-    }
-    
-    #headerMenu{
-        display: flex;
-        flex-direction: row;
-        width: 50vw;
-    }
-    
-    
-#menuBurger{
-    
+  #menu-burger {
     width: 15.7vw;
     height: 7.8vw;
-    background-image: url('menu.png');
-        background-position: center;
-        background-size: contain;
-}
+    background-image: url("menu.png");
+    background-position: center;
+    background-size: contain;
+  }
 
-    #navElem{
-        min-width: 42%;
-        margin-left: 0;
-        padding-left: 0;
-        max-width: 350px ;
-        display: flex;
-        justify-content: space-between;
-        flex-wrap: wrap
-    }
-    
-    @font-face {
-        font-family: Inter;
-        src: url('Inter-V.ttf');
-    }
-    #main-button{
-        margin-top: 4vh;
-        width: 48.42vw;
-        height: 10vw;
-        background-position: center;
-        background-size: contain;
-        background-repeat: no-repeat;
-        margin-bottom: 30px;
-        font-family: Inter;
-        transform: scaleY(1.05);
-        flex-direction: column;
-        background-image: url('logoBlack.png');
-    }
-    
-    
-    header button,a{
-        text-decoration: none;
-        color: black;
-        display: flex;
-        align-items: center;
-        font-family: Inter;
-    }
-    
-    header button svg{
-        margin-top: 4.7px;
-        margin-right: -5.5px;
-    }
-    
-    #moonImg{
-        width: 18px;
-        height: 18px;
-        margin-right: 0.5vw;
-        margin-top: -2px;
-        background-size: contain;
-        background-position: center;
-        background-image: url('moon.png');
-    }
-    
-    footer{
-        width: 100vw;
-        height: 68.9vw;
-        background-color: #4159BB;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        gap: 7.8vw;
-    }
-    
-    @font-face {
-        font-family: InterEm;
-        src: url('Inter-BoldItalic.otf');
-    }
-    
-    footer h4{
+  #navElem {
+    min-width: 42%;
+    margin-left: 0;
+    padding-left: 0;
+    max-width: 350px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  @font-face {
+    font-family: Inter;
+    src: url("Inter-V.ttf");
+  }
+  #main-button {
+    margin-top: 4vh;
+    width: 48.42vw;
+    height: 10vw;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-bottom: 30px;
+    font-family: Inter;
+    transform: scaleY(1.05);
+    flex-direction: column;
+    background-image: url("logoBlack.png");
+  }
+
+  header button,
+  a {
+    text-decoration: none;
+    color: black;
+    display: flex;
+    align-items: center;
+    font-family: Inter;
+  }
+
+  header button svg {
+    margin-top: 4.7px;
+    margin-right: -5.5px;
+  }
+
+  #moonImg {
+    width: 18px;
+    height: 18px;
+    margin-right: 0.5vw;
+    margin-top: -2px;
+    background-size: contain;
+    background-position: center;
+    background-image: url("moon.png");
+  }
+
+  footer {
+    width: 100vw;
+    height: 68.9vw;
+    background-color: #4159bb;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 7.8vw;
+  }
+
+  @font-face {
+    font-family: InterEm;
+    src: url("Inter-BoldItalic.otf");
+  }
+
+  footer h4 {
     font-family: InterEm;
     color: white;
     font-size: 35px;
     margin: 0%;
-    }
-    footer div{
-        width: 184px;
-        display: flex;
-        
-        justify-content: space-around
-    }
-    footer p{
-        color: #B2C1E2;
-        font-size: 14px;
-        font-family: Inter;
-    }
-    
+  }
+  footer div {
+    width: 184px;
+    display: flex;
+
+    justify-content: space-around;
+  }
+  footer p {
+    color: #b2c1e2;
+    font-size: 14px;
+    font-family: Inter;
+  }
 }
