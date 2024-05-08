@@ -1,155 +1,145 @@
 html {
-    margin: 0%;
-    padding: 0%;
-  
-    overflow-x: hidden;
-  
-    display: flex;
-    justify-content: center;
-  
-    scroll-behavior: smooth;
-  
-    border: 0ch;
-  }
-  body {
-    margin: 0%;
-    border: 0ch;
-    padding: 0%;
-  }
-  
-  @font-face {
-    font-family: Inter;
-    src: url("Inter-V.ttf");
-  }
-  
-  #moonImg {
-    background-image: url("moon.png");
-    
-  }
-  
-  main button:hover{
-      border: 1px solid #4159BB;
-      background-color: rgb(255, 255, 255);
-      transition-duration: 500ms;
-      color: #4159BB !important
-  }
-  
-  .white-button{
-    
-    
-    
-    font-family: Inter;
-    font-size: 1vw;
-    border-radius: 40px;
-    background-color: #4159BB;
-    box-shadow: 0 0.5vw ;
-    border: 0cap;
-    color: white;
+  margin: 0%;
+  padding: 0%;
+
+  overflow-x: hidden;
+
+  display: flex;
+  justify-content: center;
+
+  scroll-behavior: smooth;
+
+  border: 0ch;
 }
-  
-  
-  #section-four button:hover,#section-one button:hover,.white-button:hover{
-      transition-duration: 200ms;
-          border: 1px solid #4159BB;
-          background-color: rgb(255, 255, 255);
-          color: #4159BB;
-          box-shadow: 0vw 0vw 0vw 0 rgba(0, 0, 0, 0);
-      
-  }
-  
-  #section-four button,#section-one button{
-      transition-duration: 300ms;
-      box-shadow: 0vw 0.5vw 0.25vw 0 rgba(0, 0, 0, 0.318);
-      border: 1px solid #4159BB;
-      background-color: rgb(255, 255, 255);
-      color: #4159BB;
-  
-  }
-  
-  
-  iframe{
-      width: 100%;
-      height: 100%;
-  }
-
-
-  
-
-#section-four button:hover,#fir button:hover{
-    
-    border: 1px solid #4159BB;
-    background-color: rgb(255, 255, 255);
-    color: #4159BB;
-
+body {
+  margin: 0%;
+  border: 0ch;
+  padding: 0%;
 }
 
-#carousel{
-overflow: hidden;
-position: relative;
+@font-face {
+  font-family: Inter;
+  src: url("Inter-V.ttf");
 }
 
-#carousel .img{
-left: 0;
-width: 100%;
-height: 100%;
-opacity: 0;
-animation: slideshow 23s ease-in-out infinite;
-object-fit: cover;
-position: absolute;
-top: 0;
+#moonImg {
+  background-image: url("moon.png");
+}
+
+main button:hover {
+  border: 1px solid #4159bb;
+  background-color: rgb(255, 255, 255);
+  transition-duration: 500ms;
+  color: #4159bb !important;
+}
+
+.white-button {
+  font-family: Inter;
+  font-size: 1vw;
+  border-radius: 40px;
+  background-color: #4159bb;
+  box-shadow: 0 0.5vw;
+  border: 0cap;
+  color: white;
+}
+
+#section-four button:hover,
+#section-one button:hover,
+.white-button:hover {
+  transition-duration: 200ms;
+  border: 1px solid #4159bb;
+  background-color: rgb(255, 255, 255);
+  color: #4159bb;
+  box-shadow: 0vw 0vw 0vw 0 rgba(0, 0, 0, 0);
+}
+
+#section-four button,
+#section-one button {
+  transition-duration: 300ms;
+  box-shadow: 0vw 0.5vw 0.25vw 0 rgba(0, 0, 0, 0.318);
+  border: 1px solid #4159bb;
+  background-color: rgb(255, 255, 255);
+  color: #4159bb;
+}
+
+iframe {
+  width: 100%;
+  height: 100%;
+}
+
+#section-four button:hover,
+#fir button:hover {
+  border: 1px solid #4159bb;
+  background-color: rgb(255, 255, 255);
+  color: #4159bb;
+}
+
+#carousel {
+  overflow: hidden;
+  position: relative;
+}
+
+#carousel .img {
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  animation: slideshow 23s ease-in-out infinite;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
 }
 @keyframes slideshow {
-from {
+  from {
     opacity: 0;
     filter: grayscale(100%);
-}
+  }
 
-5% {
+  5% {
     opacity: 1;
     filter: grayscale(50%);
-}
+  }
 
-20% {
+  20% {
     opacity: 1;
     filter: grayscale(0);
-    
-}
+  }
 
-25% {
+  25% {
     opacity: 1;
     filter: blur(0);
-}
+  }
 
-30% {
+  30% {
     opacity: 0;
     filter: blur(2px);
-    
-}
+  }
 
-55% {
+  55% {
     opacity: 0;
-}
-}
-
-#carousel img:nth-child(1){
-animation-delay: -2s;
-
-
-}
-#carousel img:nth-child(2){
-animation-delay: 3s;
+  }
 }
 
-#carousel img:nth-child(3){
-    animation-delay: 8s;
-    }
+#carousel img:nth-child(1) {
+  animation-delay: -2s;
+}
+#carousel img:nth-child(2) {
+  animation-delay: 3s;
+}
 
-    #carousel img:nth-child(4){
-        animation-delay: 13s;
-        }
+#carousel img:nth-child(3) {
+  animation-delay: 8s;
+}
 
-        #carousel img:nth-child(5){
-            animation-delay: 18s;
-            }
+#carousel img:nth-child(4) {
+  animation-delay: 13s;
+}
 
-            
+#carousel img:nth-child(5) {
+  animation-delay: 18s;
+}
+
+.h6-none {
+    position: none;
+    display: none;
+}
