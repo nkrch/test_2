@@ -304,6 +304,10 @@ footer p {
     right: -70vw;
     border: 1px solid #4159bb;
   }
+
+  main{
+    padding-top: 26.3vw;
+  }
   .menu-header-btn,
   nav button,
   #closeBtn {

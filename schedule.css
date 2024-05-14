@@ -289,7 +289,8 @@ li {
   h2 {
     font-family: InterExBoIt;
     font-size: 8.3vw;
-    margin-top: 7.8vw;
+    margin-top: 5vw;
+    
     margin-bottom: 7.8vw;
     text-transform: uppercase;
     align-self: center;
@@ -426,7 +427,7 @@ li {
     display: flex;
     flex-direction: column;
     border-top: 1px solid black;
-
+padding-top: 26vw;
     padding-left: 8.3vw;
     padding-right: 8.3vw;
     padding-bottom: 5.26vw;
@@ -444,6 +445,7 @@ li {
   h2 {
     font-family: InterExBoIt;
     font-size: 10.53vw;
+    
     margin-top: 12.53vw;
     margin-bottom: 10.53vw;
     text-transform: uppercase;
