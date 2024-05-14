@@ -3,7 +3,7 @@ header {
   justify-content: space-between;
   padding-left: 8.3vw;
   padding-right: 8.3vw;
-  height: 84px;
+  height: 100px;
   width: 83.3vw;
   align-items: center;
   position: fixed;
@@ -12,7 +12,7 @@ header {
   z-index: 5;
 }
 main {
-  padding-top: 84px;
+  padding-top: 100px;
 }
 header button {
   background-color: rgba(250, 235, 215, 0);
@@ -157,13 +157,15 @@ footer p {
     right: -70vw;
     border: 1px solid #4159bb;
   }
-
+  main {
+    padding-top: 13.02vw;
+  }
   header {
     display: flex;
     justify-content: space-between;
     padding-left: 7.8vw;
     padding-right: 7.8vw;
-    height: 100px;
+    height: 13.02vw;
     width: 84.4vw;
     align-items: center;
   }
@@ -201,13 +203,13 @@ footer p {
     src: url("Inter-V.ttf");
   }
   #main-button {
-    margin-top: 4vh;
-    width: 184px;
-    height: 38px;
+    margin-top: 0vh;
+    width: 24vw;
+    height: 5.1vw;
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
-    margin-bottom: 30px;
+    margin-bottom: 0vh;
     font-family: Inter;
     transform: scaleY(1.05);
     flex-direction: column;
